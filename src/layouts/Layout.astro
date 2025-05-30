@@ -1,3 +1,7 @@
+---
+import "../styles/global.css";
+import '@fontsource-variable/archivo';
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,9 +9,10 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Iñaki Mir | UX/UI Designer and Frontend Developer</title>
+		<meta name="description" content="Iñaki Mir is a UX/UI designer and frontend developer based in Mallorca, Spain. He specializes in creating user-friendly interfaces and engaging digital experiences." />
 	</head>
-	<body>
+	<body class="h-screen bg-[#FFFEFD] text-[#323232]">
 		<slot />
 	</body>
 </html>
@@ -18,5 +23,6 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		font-family: "Archivo Variable", sans-serif;
 	}
 </style>
