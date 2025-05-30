@@ -1,8 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
-import Button from '../components/Button.astro';
-
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
@@ -17,4 +16,25 @@ import Button from '../components/Button.astro';
 			</div>
 		</div>
 	</section>
+	<section class="pt-20 pb-20 grid grid-cols-12 px-10 gap-4">
+		<div class="col-span-5 text-[13px] font-light pb-8">[KNOWLEDGE]</div>
+		<div class="col-span-7 text-[32px] font-normal pb-10"> 
+			I use leading design applications to create projects with precision and creativity. I’m committed to delivering innovative and user-friendly solutions that meet client needs and enhance user experience.
+		</div>
+			<div class="col-start-7 col-span-6 text-[32px] font-medium pb-4 border-b mb-8 border-[#AFAFAF]">Design with Figma and Illustrator</div>
+			<div class="col-start-7 col-span-6 text-[32px] font-medium pb-4 border-b mb-8 border-[#AFAFAF]">Development with Astro/React JS</div>
+			<div class="col-start-7 col-span-6 text-[32px] font-medium pb-4 border-b mb-8 border-[#AFAFAF]">CMS with Wordpress</div>
+
+	</section>
+	<section class="pb-20 grid grid-cols-12 px-10 gap-4">
+			<div class="col-span-12 text-[13px] font-light pb-8">[WHAT I DO]</div>
+			<div class="col-start-7 col-span-6 text-[32px] font-medium pb-4 border-b mb-8 border-[#AFAFAF]">UX/UI Design</div>
+			<div class="col-start-7 col-span-6 text-[32px] font-medium pb-4 border-b mb-8 border-[#AFAFAF]">Web Design</div>
+			<div class="col-start-7 col-span-6 text-[32px] font-medium pb-4 border-b mb-8 border-[#AFAFAF]">Frontend Development</div>
+	</section>
+	<section class="pb-20 grid grid-cols-12 px-10">
+			<div class="col-span-12 text-[13px] font-light pb-2">[CONTACT ME]</div>
+			<a href="mailto:imirbelloso@gmail.com" class="col-span-12 font-medium">imirbelloso@gmail.com</a>			
+	</section>
+	<Footer/>
 </Layout>
