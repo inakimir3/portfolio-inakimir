@@ -1,0 +1,87 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Button from "../../components/Button.astro";
+---
+
+<Layout>
+	<Header/>
+	<section class="grid grid-cols-12 px-5 lg:px-10 gap-4" >
+        <div class="col-span-12 flex flex-col lg:gap-2 border-b border-[#AFAFAF] pb-2 lg:pb-5">
+
+            <h2 class="font-medium">
+                Fit+
+            </h2>
+            <div class="font-light text-[13px]">UX/UI DESIGN</div>
+        </div>
+	</section>
+
+    <section class="relative grid grid-cols-12 px-5 lg:px-10 gap-4 pt-10 lg:pt-24 pb-4 lg:pb-20">
+        <article class="col-span-12 lg:col-span-5 flex flex-col gap-6 lg:gap-12">
+            <div class="flex flex-col gap-8">
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Client</div>
+                    <div class="font-light text-[13px]">UNIVERSITY PROJECT</div>
+                </div>
+                <!-- <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Live preview</div>
+                    <a href="#" target="_blank" class="font-light text-[13px]">NOT AVAILABLE</a>
+                </div> -->
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Date</div>
+                    <div class="font-light text-[13px]">MAY 2025</div>
+                </div>
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Work</div>
+                    <div>
+                        <div class="font-light text-[13px]">FIGMA</div>
+                    </div>
+                </div>
+            </div>
+            <Button href="/" position="rotate-180"/>
+            <p class="text-[28px] lg:text-[32px] font-medium">Clean and modern UX/UI design for a fitness tracking app.</p>
+            <div class="flex flex-col gap-12">
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[PROJECT OVERVIEW]</div>
+                    <p class="font-light leading-5">Fit+ is a conceptual mobile app designed as a university project with the goal of helping users manage their physical activity, sports routines, and nutrition in one unified platform. The app focuses on offering a clean, modern, and motivating experience that supports healthy lifestyle habits with clarity and ease.</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[MY ROLE]</div>
+                    <p class="font-light leading-5">
+                        I was responsible for the entire UX/UI design process, from research and strategy to interface design. All work was done in Figma, following a user-centered design methodology.                    
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[PROCESS AND DELIVERIES]</div>
+                    <p class="font-light leading-5">
+                    <b>Benchmarking:</b> I analyzed six competitors (both direct and indirect) to understand current trends in fitness and health tracking apps, identify UX best practices, and detect opportunities for differentiation. <br/><br/>
+                    <b>User Flow:</b> Based on user goals and app functionality, I created a detailed user flow to structure the app’s navigation and core actions.<br><br>
+                    <b>Card Sorting:</b> To validate the information architecture, I conducted a card sorting exercise with 30 participants, helping define a structure that aligned with user expectations and mental models. <br><br>
+                    <b>Sketches and Wireframes:</b> Early ideas were developed into low-fidelity wireframes to explore layout and interaction design.<br><br>
+                    <b>UI Design:</b> The final interface was designed in Figma, using a minimalist aesthetic, with balanced layouts, soft tones, and intuitive components.
+                </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[DESIGN APPROACH]</div>
+                    <p class="font-light leading-5">
+                        Fit+ uses a light and clean UI, with ample white space, clear icons, and simple navigation to reduce friction and support user focus. Each of the main sections was designed to be visually distinct yet cohesive, making it easy for users to switch contexts and access key data quickly.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[OUTCOME]</div>
+                    <p class="font-light leading-5">
+                        The final result is a fully designed mobile app prototype that reflects a modern, health-conscious brand and a user-friendly experience. The project demonstrates the value of combining research and usability testing with strong visual design principles to create a wellness app that is both practical and engaging.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="col-span-12 lg:col-span-6 col-start-1 lg:col-start-7 bg-[#98CFF1] py-8 lg:py-32 px-8 lg:px-[88px] flex flex-col gap-8 lg:gap-16">
+            <img src="/public/fit.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+            <img src="/public/fit2.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+            <img src="/public/fit3.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+        </article>
+    </section>
+	
+	<Footer/>
+</Layout>

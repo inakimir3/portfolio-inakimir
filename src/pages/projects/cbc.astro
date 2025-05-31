@@ -1,0 +1,88 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Button from "../../components/Button.astro";
+---
+
+<Layout>
+	<Header/>
+	<section class="grid grid-cols-12 px-5 lg:px-10 gap-4" >
+        <div class="col-span-12 flex flex-col lg:gap-2 border-b border-[#AFAFAF] pb-2 lg:pb-5">
+
+            <h2 class="font-medium">
+                CBC
+            </h2>
+            <div class="font-light text-[13px]">UX/UI DESIGN</div>
+        </div>
+	</section>
+
+    <section class="relative grid grid-cols-12 px-5 lg:px-10 gap-4 pt-10 lg:pt-24 pb-4 lg:pb-20">
+        <article class="col-span-12 lg:col-span-5 flex flex-col gap-6 lg:gap-12">
+            <div class="flex flex-col gap-8">
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Client</div>
+                    <div class="font-light text-[13px]">UNIVERSITY PROJECT</div>
+                </div>
+                <!-- <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Live preview</div>
+                    <a href="#" target="_blank" class="font-light text-[13px]">NOT AVAILABLE</a>
+                </div> -->
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Date</div>
+                    <div class="font-light text-[13px]">MAY 2025</div>
+                </div>
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Work</div>
+                    <div>
+                        <div class="font-light text-[13px]">FIGMA</div>
+                    </div>
+                </div>
+            </div>
+            <Button href="/" position="rotate-180"/>
+            <p class="text-[28px] lg:text-[32px] font-medium">Redesigning CBC website with a user-first approach and cleaner visual structure</p>
+            <div class="flex flex-col gap-12">
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[PROJECT OVERVIEW]</div>
+                    <p class="font-light leading-5">This was a university group project carried out by a team of four. We focused on redesigning CBC.ca, the website of Canada’s national public broadcaster. Together, we analyzed the existing platform’s usability and visual design issues, then approached the redesign with a strong user-centered focus. The result is a cleaner, more structured, and more accessible news experience tailored to user needs.</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[MY ROLE]</div>
+                    <p class="font-light leading-5">
+                        As the project lead, I coordinated the team’s workflow and helped shape the overall design direction. My main focus areas were the heuristic expert analysis, the creation of wireframes, and the development of the design system. I ensured consistency across the design process and guided decisions based on usability principles and user feedback.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[PROCESS AND DELIVERIES]</div>
+                    <p class="font-light leading-5">
+                    <b>User Persona and Journey:</b> I created a detailed user persona and mapped out their journey through the site to better understand pain points and key tasks.<br/><br/>
+                    <b>Heuristic Expert Analysis:</b> Using Nielsen’s 10 heuristics, I evaluated the original website to identify usability issues and guide design decisions.<br><br>
+                    <b>Moodboard:</b> I developed a visual moodboard to establish a tone that was clean, informative, and trustworthy.. <br><br>
+                    <b>Sketches and Wireframes:</b> Early design concepts focused on improving visual hierarchy, reducing clutter, and reorganizing content for better usability.<br><br>
+                    <b>Guerrilla Testing:</b> I conducted quick user testing sessions with real users to evaluate wireframes and collect feedback. Insights from this phase directly informed the changes made in the final UI.<br><br>
+                    <b>Mockups and Design System:</b> Final high-fidelity mockups were created in Figma, incorporating all improvements based on research and testing. I also built a design system to ensure consistency across components, typography, and layout.
+                </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[DESIGN APPROACH]</div>
+                    <p class="font-light leading-5">
+                        The redesign aimed to create a cleaner, more accessible, and easier-to-navigate news platform. I prioritized content readability, simplified navigation, and visual consistency. The layout encourages scanning, while the interface feels modern and structured without overwhelming the user.                    
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[OUTCOME]</div>
+                    <p class="font-light leading-5">
+                        The result is a fully redesigned concept for CBC.ca that reflects a more organized, intuitive, and user-first experience. This project highlights how combining UX research, usability testing, and thoughtful visual design can transform a dense media site into a clear and engaging digital product.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="col-span-12 lg:col-span-6 col-start-1 lg:col-start-7 bg-[#F1E298] py-8 lg:py-32 px-8 lg:px-[88px] flex flex-col gap-8 lg:gap-16">
+            <img src="/public/cbc.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+            <img src="/public/cbc2.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+            <img src="/public/cbc3.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+        </article>
+    </section>
+	
+	<Footer/>
+</Layout>
