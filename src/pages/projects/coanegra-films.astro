@@ -1,0 +1,93 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Button from "../../components/Button.astro";
+---
+
+<Layout>
+	<Header/>
+	<section class="grid grid-cols-12 px-5 lg:px-10 gap-4" >
+        <div class="col-span-12 flex flex-col lg:gap-2 border-b border-[#AFAFAF] pb-2 lg:pb-5">
+
+            <h2 class="font-medium">
+                Coanegra Films
+            </h2>
+            <div class="font-light text-[13px]">WEBSITE DEVELOPMENT</div>
+        </div>
+	</section>
+
+    <section class="relative grid grid-cols-12 px-5 lg:px-10 gap-4 pt-10 lg:pt-24 pb-4 lg:pb-20">
+        <article class="col-span-12 lg:col-span-5 flex flex-col gap-6 lg:gap-12">
+            <div class="flex flex-col gap-8">
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Client</div>
+                    <div class="font-light text-[13px]">COANEGRA FILMS</div>
+                </div>
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Live preview</div>
+                    <a href="https://coanegrafilms.com/" target="_blank" class="font-light text-[13px]">WWW.COANEGRAFILMS.COM</a>
+                </div>
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Date</div>
+                    <div class="font-light text-[13px]">OCTOBER 2024</div>
+                </div>
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Work</div>
+                    <div>
+                        <div class="font-light text-[13px]">FIGMA</div>
+                        <div class="font-light text-[13px]">WORDPRESS</div>
+                    </div>
+                </div>
+            </div>
+            <Button href="/" position="rotate-180"/>
+            <p class="text-[28px] lg:text-[32px] font-medium">Modern, youthful and bold website for a photography and video agency based in Mallorca.</p>
+            <div class="flex flex-col gap-12">
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[PROJECT OVERVIEW]</div>
+                    <p class="font-light leading-5">Coanegra Films is a creative agency specialized in photography and video for businesses, events, and festivals. Based in Mallorca, they wanted a digital presence that felt as dynamic, energetic, and visually impactful as their work. The goal was to design a site that captured their bold and youthful identity while putting their visual content front and center.</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[MY ROLE]</div>
+                    <p class="font-light leading-5">
+                        I handled both the UX/UI design and development. The website was designed in Figma and developed using WordPress.                    
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[GOALS]</div>
+                    <p class="font-light leading-5">
+                    · Reflect Coanegra’s bold, energetic, and modern aesthetic <br>
+                    · Showcase photo and video projects in an immersive, visual-first layout <br>
+                    · Design for mobile-first browsing and quick navigation <br>
+                    · Keep the tone approachable, avoiding formality                    
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[DESIGN APPROACH]</div>
+                    <p class="font-light leading-5">
+                        The site design leans into a bold and minimal layout, with oversized typography, dynamic grid systems, and full-screen visuals, with a black background, white typography, and red accents to add punch. The case studies are designed to let the work speak for itself.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[DEVELOPMENT]</div>
+                    <p class="font-light leading-5">
+                        The site is built on WordPress using a fully custom theme, with performance and flexibility in mind. Media content is optimized for fast loading, and the responsive structure ensures a smooth experience across all screen sizes. Animations and interactions were coded manually to maintain full creative control.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[OUTCOME]</div>
+                    <p class="font-light leading-5">
+                        The result is a sleek, modern website that feels confident, fresh, and in tune with Coanegra Films’ brand. It stands out from competitors with its bold design and has become a key tool for showcasing their work to potential clients and collaborators.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="col-span-12 lg:col-span-6 col-start-1 lg:col-start-7 bg-[#F4F1E7] py-8 lg:py-32 px-8 lg:px-[88px] flex flex-col gap-8 lg:gap-16">
+            <img src="/public/hero.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+            <img src="/public/hero2.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+            <img src="/public/hero3.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+        </article>
+    </section>
+	
+	<Footer/>
+</Layout>
