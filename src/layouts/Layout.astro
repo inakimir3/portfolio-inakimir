@@ -18,16 +18,19 @@ import Analytics from '@vercel/analytics/astro'
 		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon2.svg" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>Iñaki Mir | UX/UI Designer and Frontend Developer</title>
 		<meta name="description" content="Iñaki Mir is a UX/UI designer and frontend developer based in Mallorca, Spain. He specializes in creating user-friendly interfaces and engaging digital experiences." />
+		
 		<SpeedInsights />
 		<Analytics/>
 		
 	</head>
 	<body class="h-screen bg-[#FFFEFD] text-[#323232]">
 		<slot />
+		<script type="module" src="src/assets/cookieconsent-config.js"></script>
 	</body>
 </html>
 
