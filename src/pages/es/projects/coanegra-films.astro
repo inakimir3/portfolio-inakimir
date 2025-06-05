@@ -1,0 +1,97 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import Button from "../../../components/Button.astro";
+---
+
+<Layout>
+	<Header/>
+	<section class="grid grid-cols-12 px-5 lg:px-10 gap-4" >
+        <div class="col-span-12 flex flex-col lg:gap-2 border-b border-[#AFAFAF] pb-2 lg:pb-5">
+
+            <h2 class="font-medium">
+                Coanegra Films
+            </h2>
+            <div class="font-light text-[13px]">DESARROLLO WEB</div>
+        </div>
+	</section>
+
+    <section class="relative grid grid-cols-12 px-5 lg:px-10 gap-4 pt-10 lg:pt-24 pb-4 lg:pb-20">
+        <article class="col-span-12 lg:col-span-5 flex flex-col gap-6 lg:gap-12">
+            <div class="flex flex-col gap-8">
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Cliente</div>
+                    <div class="font-light text-[13px]">COANEGRA FILMS</div>
+                </div>
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Visitar web</div>
+                    <a href="https://coanegrafilms.com/" target="_blank" class="font-light text-[13px]">WWW.COANEGRAFILMS.COM</a>
+                </div>
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Fecha</div>
+                    <div class="font-light text-[13px]">OCTUBRE 2024</div>
+                </div>
+                <div class="flex justify-between py-2 lg:py-5 border-b border-[#AFAFAF]">
+                    <div class="font-medium">Trabajo</div>
+                    <div>
+                        <div class="font-light text-[13px]">FIGMA</div>
+                        <div class="font-light text-[13px]">WORDPRESS</div>
+                    </div>
+                </div>
+            </div>
+            <Button href="/" position="rotate-180"/>
+            <p class="text-[28px] lg:text-[32px] font-medium">
+                Web moderna, profesional y atrevida para una agencia de fotografía y vídeo con sede en Mallorca.
+            </p>
+            <div class="flex flex-col gap-12">
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[RESUMEN DEL PROYECTO]</div>
+                    <p class="font-light leading-5">
+                        Coanegra Films es una agencia creativa especializada en fotografía y vídeo para empresas, eventos y festivales. Con sede en Mallorca, querían una presencia digital tan dinámica, enérgica y visualmente impactante como su trabajo. El objetivo era diseñar un sitio web que reflejara su identidad atrevida y juvenil y, al mismo tiempo, pusiera su contenido visual en primer plano.                    
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[MI ROL]</div>
+                    <p class="font-light leading-5">
+                        Me encargé del diseño web y de su desarrollo. La página web fue diseñada con Figma y desarrollada con WordPress.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[OBJETIVOS]</div>
+                    <p class="font-light leading-5">
+                    · Reflejar la estética atrevida, enérgica y moderna de Coanegra <br>
+                    · Muestrar sus proyectos fotográficos y de vídeo en un diseño envolvente y visualmente atractivo <br>
+                    · Diseño responsive que se adapta a todos los dispositivos <br>
+                    · Crear un sitio flexible y fácil de gestionar para futuras actualizaciones                  
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[ENFOQUE DE DISEÑO]</div>
+                    <p class="font-light leading-5">
+                        Se ha optado por un diseño atrevido y minimalista, con tipografías grande, sistemas de cuadrícula dinámicos y elementos visuales a pantalla completa, con fondo negro, tipografía blanca y toques rojos para darle más fuerza.                    
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[DESARROLLO]</div>
+                    <p class="font-light leading-5">
+                        La web se ha desarrollado en WordPress con un tema totalmente personalizado, pensando en el rendimiento y la flexibilidad. El contenido multimedia se ha optimizado para que se cargue rápidamente, y la estructura adaptativa garantiza una experiencia fluida en todos los tamaños de pantalla. Las animaciones y las interacciones se programaron manualmente para mantener un control creativo total.                    
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="text-[13px] font-light">[RESULTADO]</div>
+                    <p class="font-light leading-5">
+                        El resultado es un sitio web elegante y moderno que transmite confianza, frescura y sintonía con Coanegra Films. Destaca entre sus competidores por su atrevido diseño y se ha convertido en una herramienta clave para mostrar su trabajo a clientes y colaboradores potenciales.                    
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article class="col-span-12 lg:col-span-6 col-start-1 lg:col-start-7 bg-[#F4F1E7] py-8 lg:py-32 px-8 lg:px-[88px] flex flex-col gap-8 lg:gap-16">
+            <img src="/hero.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+            <img src="/hero2.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+            <img src="/hero3.webp" alt="Coanegra Films Hero Image" class="lg:sticky lg:top-[100px] w-full aspect-[295.36/194.00] object-cover"/>
+        </article>
+    </section>
+	
+	<Footer/>
+</Layout>
