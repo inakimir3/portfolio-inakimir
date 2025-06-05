@@ -1,0 +1,46 @@
+---
+import Header from '../../components/Header.astro';
+import Layout from '../../layouts/Layout.astro';
+import Button from '../../components/Button.astro';
+import Card from '../../components/Card.astro';
+import Footer from '../../components/Footer.astro';
+
+---
+
+<Layout>
+	<Header/>
+	<section class="grid grid-cols-12 px-5 lg:px-10 gap-4">
+		<div class="col-span-12 lg:col-span-5 flex flex-col font-light">
+			<h2>Diseño UX/UI</h2>
+			<h2>Desarrollo Frontend</h2>
+		</div>
+		<div class="col-span-12 lg:col-span-7 flex flex-col gap-6">
+			<div class="flex flex-col gap-4 pb-6 border-b border-[#AFAFAF]">
+				<div class="text-[13px] font-light">[SOBRE MÍ]</div>
+				<div class="text-[20px] lg:text-[32px] font-normal">
+                    Tengo experiencia en crear aplicaciones web fáciles de usar y atractivas. Me encargo de todo el proceso: desde los bocetos iniciales (wireframes) y el diseño visual hasta la programación del sitio (front-end). Mi objetivo es que el resultado sea coherente, rápido y que cumpla con las expectativas del cliente.
+                </div>
+			</div>
+			<div class="w-full flex justify-end">
+				<Button href="/about-me"/>
+			</div>
+		</div>
+	</section>
+	<section class="pt-10 lg:pt-20 pb-10 lg:pb-20 grid grid-cols-12 px-5 lg:px-10 gap-4">
+			<div class="col-span-12 text-[13px] font-light pb-8">[PROYECTOS]</div>
+			<Card title="FIT+" type="DISEÑO UX/UI" background="bg-[#98CFF1]" image="/fit.webp" href="/projects/fit-plus"/>
+			<Card title="CBC" type="REDISEÑO WEB" background="bg-[#F1E298]" image="/cbc.webp" href="/projects/cbc"/>
+			<Card title="Coanegra Films" type="DESARROLLO WEB" background="bg-[#F4F1E7]" image="/hero.webp" href="/projects/coanegra-films"/>	
+	</section>
+	<section class="pb-10 lg:pb-20  grid grid-cols-12 px-5 lg:px-10 gap-4">
+			<div class="col-span-12 text-[13px] font-light pb-8">[MIS SERVICIOS]</div>
+			<div class="col-start-1 lg:col-start-7 col-span-12 lg:col-span-6 text-[32px] font-medium pb-4 border-b mb-8 border-[#AFAFAF]">Diseño UX/UI</div>
+			<div class="col-start-1 lg:col-start-7 col-span-12 lg:col-span-6 text-[32px] font-medium pb-4 border-b mb-8 border-[#AFAFAF]">Diseño Web</div>
+			<div class="col-start-1 lg:col-start-7 col-span-12 lg:col-span-6 text-[32px] font-medium pb-4 border-b mb-8 border-[#AFAFAF]">Desarrollo web</div>
+	</section>
+	<section class="pb-10 lg:pb-20  grid grid-cols-12 px-5 lg:px-10">
+			<div class="col-span-12 text-[13px] font-light pb-2">[CONTÁCTAME]</div>
+			<a href="mailto:inakimir3@gmail.com" class="col-span-12 font-medium">inakimir3@gmail.com</a>			
+	</section>
+	<Footer/>
+</Layout>
