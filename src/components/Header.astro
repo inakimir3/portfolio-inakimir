@@ -1,5 +1,36 @@
-<header class="w-full py-[20px] px-5 lg:px-[40px] flex mb-4 lg:mb-8">
-    <a href="/" class="border-b border-[#AFAFAF] w-full">
-        <h1 class="text-5xl lg:text-[104px] font-semibold">Iñaki Mir</h1>
-    </a>
+---
+const pathname = Astro.url.pathname;
+const isSpanish = pathname.startsWith('/es');
+const lang = isSpanish ? 'es' : 'en';
+const homeHref = isSpanish ? '/es/' : '/';
+
+const locales = [
+  { code: 'en', label: 'English', href: pathname.replace(/^\/es/, '') || '/' },
+  { code: 'es', label: 'Español', href: pathname.startsWith('/es') ? pathname : '/es' + pathname }
+];
+---
+
+<header class="w-full py-[20px] px-5 lg:px-[40px] flex justify-between items-center mb-4 lg:mb-8 relative">
+  <!-- Logo -->
+   <div class="border-b border-[#AFAFAF] flex justify-between w-full items-center">
+
+       <a href={homeHref} class="">
+           <h1 class="text-5xl lg:text-[104px] font-semibold">Iñaki Mir</h1>
+        </a>
+        
+        <div class="flex gap-2 items-center">
+            {locales.map(locale => (
+                <a
+                href={locale.href}
+                class={`text-base uppercase hover:opacity-70 transition-opacity ${
+                    locale.code === lang ? 'font-bold' : 'font-normal'
+                }`}
+                >
+                {locale.code}
+                </a>
+            ))}
+        </div>
+
+
+    </div>
 </header>
