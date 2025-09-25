@@ -1,17 +1,7 @@
----
-const pathname = Astro.url.pathname;
-const isSpanish = pathname.startsWith('/es');
-const lang = isSpanish ? 'es' : 'en';
-const homeHref = isSpanish ? '/es/' : '/';
 
-const locales = [
-  { code: 'en', label: 'English', href: pathname.replace(/^\/es/, '') || '/' },
-  { code: 'es', label: 'Español', href: pathname.startsWith('/es') ? pathname : '/es' + pathname }
-];
----
 
 <footer class="flex justify-between px-5 lg:px-10 pb-5 pt-10">
     <a href="https://www.linkedin.com/in/inakimir/" target="_blank">LinkedIn</a>
-    <a href={homeHref} class="font-semibold">inakimir.com</a>
-    <div>© 2025</div>
+    <a href="/" class="font-semibold">inakimir.com</a>
+    <div>© {new Date().getFullYear()}</div>
 </footer>

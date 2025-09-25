@@ -1,2 +1,20 @@
 @import "tailwindcss";
 
+.cursor-ball {
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+}
+
+
+.cursor-ball {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  transform: translate(-50%, -50%)
+}
+
+body, a {
+  cursor: none;
+}

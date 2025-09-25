@@ -10,10 +10,10 @@ import Analytics from '@vercel/analytics/astro'
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
 		<link rel="manifest" href="/site.webmanifest">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
 		<meta name="generator" content={Astro.generator} />
@@ -26,7 +26,18 @@ import Analytics from '@vercel/analytics/astro'
 	</head>
 	<body class="h-screen bg-[#F5F5F5] text-[#282C36]">
 		<slot />
+		<div class="cursor-ball"></div>
+
 		<script type="module" src="src/assets/cookieconsent-config.js"></script>
+		<script>
+			let cursorBall = document.querySelector(".cursor-ball");
+			document.addEventListener("mousemove", (e) => {
+				cursorBall.style.top = e.pageY + "px";
+				cursorBall.style.left = e.pageX + "px";
+			});
+
+
+		</script>
 	</body>
 </html>
 
