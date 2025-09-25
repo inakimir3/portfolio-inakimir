@@ -3,19 +3,11 @@ import "../styles/global.css";
 import '@fontsource-variable/archivo';
 import SpeedInsights from '@vercel/speed-insights/astro';
 import Analytics from '@vercel/analytics/astro'
+
 ---
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZRLHNLCP3"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'G-3ZRLHNLCP3');
-		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -25,14 +17,14 @@ import Analytics from '@vercel/analytics/astro'
 		<link rel="manifest" href="/site.webmanifest">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
 		<meta name="generator" content={Astro.generator} />
-		<title>Iñaki Mir | UX/UI Designer and Frontend Developer</title>
-		<meta name="description" content="Iñaki Mir is a UX/UI designer and frontend developer based in Mallorca, Spain. He specializes in creating user-friendly interfaces and engaging digital experiences." />
-		
+		<title>Iñaki Mir - Diseñador web</title>
+		<meta name="description" content="Iñaki Mir is a web designer based in Mallorca, Spain. He specializes in creating user-friendly interfaces and engaging digital experiences." />
+
 		<SpeedInsights />
 		<Analytics/>
 		
 	</head>
-	<body class="h-screen bg-[#FFFEFD] text-[#323232]">
+	<body class="h-screen bg-[#F5F5F5] text-[#282C36]">
 		<slot />
 		<script type="module" src="src/assets/cookieconsent-config.js"></script>
 	</body>

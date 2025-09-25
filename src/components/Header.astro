@@ -1,36 +1,32 @@
----
-const pathname = Astro.url.pathname;
-const isSpanish = pathname.startsWith('/es');
-const lang = isSpanish ? 'es' : 'en';
-const homeHref = isSpanish ? '/es/' : '/';
-
-const locales = [
-  { code: 'en', label: 'English', href: pathname.replace(/^\/es/, '') || '/' },
-  { code: 'es', label: 'Español', href: pathname.startsWith('/es') ? pathname : '/es' + pathname }
-];
----
-
-<header class="w-full py-[20px] px-5 lg:px-[40px] flex justify-between items-center mb-4 lg:mb-8 relative">
-  <!-- Logo -->
-   <div class="border-b border-[#AFAFAF] flex justify-between w-full items-center">
-
-       <a href={homeHref} class="">
-           <h1 class="text-5xl lg:text-[104px] font-semibold">Iñaki Mir</h1>
-        </a>
-        
-        <div class="flex gap-2 items-center">
-            {locales.map(locale => (
-                <a
-                href={locale.href}
-                class={`text-base uppercase hover:opacity-70 transition-opacity ${
-                    locale.code === lang ? 'font-bold' : 'font-normal'
-                }`}
-                >
-                {locale.code}
-                </a>
-            ))}
-        </div>
 
 
-    </div>
+<header class="grid grid-cols-12 px-10">
+    <h1 class="col-span-12 flex justify-between text-[140px] font-bold">
+        <span>IÑAKI</span>
+        <span>MIR</span>
+    </h1>
+    <p class="col-span-2 text-[20px]" id="header-text">
+        DISEÑADOR WEB EXPERTO EN DISEÑO Y DESARROLLO DIGITAL
+    </p>
+    <nav class="col-start-11 col-span-2 text-[20px]">
+        <ul class="flex items-start justify-end gap-4">
+            <li><a href="#sobre-mi" class="hover:text-[#7B8397] transition-all duration-300">Sobre mí</a></li>
+            <li><a href="#contacto" class="hover:text-[#7B8397] transition-all duration-300">Contacto</a></li>
+        </ul>
+    </nav>
 </header>
+
+<script>
+  import { gsap } from "gsap";
+  import { TextPlugin } from "gsap/TextPlugin";
+
+  gsap.registerPlugin(TextPlugin);
+
+  // Animación del párrafo
+  gsap.from("#header-text", {
+    duration: 2,       // duración total
+    text: "",          // empieza vacío
+    ease: "none",      // lineal para efecto máquina de escribir
+    delay: 0.5,        // opcional, espera medio segundo
+  });
+</script>

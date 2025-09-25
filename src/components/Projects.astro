@@ -1,0 +1,32 @@
+<section class="grid grid-cols-12  px-10 mt-36 relative">
+  <div id="project-card" class="group sticky top-0 col-span-12  rounded-[64px] overflow-hidden">
+    <img src="./fit.webp" class="w-full object-cover rounded-[64px] transition-transform duration-500 ease-in-out group-hover:scale-110" alt="Proyecto Coanegra" />
+  </div>
+
+  <div id="project-card2" class="group sticky top-0 col-span-12  rounded-[64px] overflow-hidden">
+    <img src="./images/coanegra.png" class="w-full object-cover rounded-[64px] transition-transform duration-500 ease-in-out group-hover:scale-110" alt="Proyecto Coanegra" />
+  </div>
+  
+  <div id="project-card3" class="group sticky top-0 col-span-12  rounded-[64px] overflow-hidden">
+    <img src="./cbc.webp" class="w-full object-cover rounded-[64px] transition-transform duration-500 ease-in-out group-hover:scale-110" alt="Proyecto Coanegra" />
+  </div>
+</section>
+
+<script>
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    gsap.registerPlugin(ScrollTrigger);
+
+    
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            scrub: true,
+        }
+    });
+
+    tl
+        .to('#project-card', { duration: 0.5, scale: 0.6, })
+        .to('#project-card2', { duration: 0.6, scale: 0.6, }, "<")
+        .to('#project-card3', { duration: 0.8, scale: 0.6, }, "<")
+</script>
